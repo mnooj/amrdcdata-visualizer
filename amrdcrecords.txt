@@ -1,0 +1,9 @@
+South Pole Station
+1958,https://amrdcdata.ssec.wisc.edu/dataset/surface-observational-data-amundsen-scott-south-pole-station-1958
+1959,https://amrdcdata.ssec.wisc.edu/dataset/surface-observational-data-amundsen-scott-south-pole-station-1959
+Byrd
+2019,https://amrdcdata.ssec.wisc.edu/dataset/quality-controlled-observational-data-byrd-automatic-weather-station-2019
+2020,https://amrdcdata.ssec.wisc.edu/dataset/quality-controlled-observational-climatology-data-byrd-automatic-weather-system-2020
+Dome C
+2019,https://amrdcdata.ssec.wisc.edu/dataset/quality-controlled-observational-data-dome-c-automatic-weather-station-2019
+2020,https://amrdcdata.ssec.wisc.edu/dataset/quality-controlled-observational-data-dome-c-automatic-weather-station-2020
