@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AMRDC Data Visualizer 1.0 - Overlay Stations</title>
+        <link rel='stylesheet' id='uwmadison-fonts-css'  href='https://amrdc.ssec.wisc.edu/wp-test/wp-content/themes/amrdc-theme/dist/fonts/uw160/fonts.css?ver=1.0.0' type='text/css' media='all' />
+        <link rel='stylesheet' id='uwmadison-style-css'  href='https://amrdc.ssec.wisc.edu/wp-test/wp-content/themes/amrdc-theme/dist/main.min.css?ver=0.7.0' type='text/css' media='all' />
+        <style type="text/css">
+            #header {
+                padding: 10px;
+                vertical-align: top;
+            }
+            #row_container {
+                padding-left: 10px;
+            }
+            #names_list,
+            #years_list,
+            #measurements,
+            #button,
+            #overlay_check,
+            #boxplot_check {
+                display: inline-table;
+                padding: 5px;
+                zoom: 1;
+            }
+            h1 {
+                margin-right: 40%;
+                padding: 0px;
+            }
+            #names_list2,
+            #years_list2 {
+                display: inline-table;
+                padding: 0px 5px 5px 5px;
+                zoom: 1;
+            }
+            select {
+                width: 200px;
+                font-size: 16px;
+                border: 1px solid #CCC;
+                cursor: pointer;
+                background-color: #fff;
+            }
+            #repo_link2 {
+                padding-bottom: 30px;
+            }
+        </style>
+
+    </head>
+
+<body>
+        <div id="header">
+            <div id="logo">
+                <a href="https://amrdcdata.ssec.wisc.edu"><img src="{{url_for('static', filename='logo.png')}}" width="75" height="75" align="left"/></a>
+            </div>
+            <div id="title">
+                <h1 align="right">Data Visualizer</h1>
+            </div>
+        </div>
+        <div id="row_container">
+            <div id="names_list">
+                <select name="names" id="names" onchange="getYears()">
+                    <option value="">Select Station #1</option>
+                </select>
+            </div>
+
+            <div id="years_list">
+                <select name="years" id="years">
+                    <option value="">Select Year #1</option>
+                </select>
+            </div>
+
+            <div id="measurements">
+                <select name="meas" id="meas">
+                    <option value="">Select Measurement</option>
+                    <option value="1">Temperature</option>
+                    <option value="2">Pressure</option>
+                    <option value="3">Wind Speed</option>
+                </select>
+            </div>
+
+            <div id="button">
+                <input type="submit" value="Visualize" onclick="overlay()">
+            </div>
+
+            <div id="overlay_check">
+                <input type="checkbox" id="overlay_box" name="overlay_box" checked onclick="location.href = '/';">
+                <label for="overlay_box">Overlay second dataset</label>    
+            </div>
+            <div id="boxplot_check">
+                <input type="checkbox" id="boxplot_box" name="boxplot_box" onclick="location.href = '/index3';">
+                <label for="boxplot_box">Boxplot multiple years</label>   
+            </div>
+    
+
+            <br>
+            <div id="names_list2">
+                <select name="names2" id="names2" onchange="getYears2()">
+                    <option value="">Select Station #2</option>
+                </select>
+
+            </div>
+            <div id="years_list2">
+                <select name="years2" id="years2">
+                    <option value="">Select Year #2</option>
+                </select>
+            </div>
+        </div>
+
+
+
+    <center>
+    <hr>
+        <div id="graph"></div>
+        <div id="divider"></div>
+        <div id="repo_link">
+            <a id="link_anchor"></a>
+        </div>
+        <div id="repo_link2">
+            <a id="link_anchor2"></a>
+        </div>
+
+    </center>
+
+    <script type="text/javascript">
+        fetch('/list')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                appendData(data);
+                appendData2(data);
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+            });
+
+        function appendData(data) {
+            var select = document.getElementById("names");
+            select.options.length = 0;
+            var option = document.createElement("option");
+            option.value = "";
+            option.text = "Select Station #1";
+            select.appendChild(option);
+
+            for (var i = 0; i < data.length; i++) {
+                var option = document.createElement("option");
+                option.value = data[i];
+                option.text = data[i];
+                select.appendChild(option);
+            }
+        }
+        function appendData2(data) {
+            var select = document.getElementById("names2");
+            select.options.length = 0;
+            var option = document.createElement("option");
+            option.value = "";
+            option.text = "Select Station #2";
+            select.appendChild(option);
+
+            for (var i = 0; i < data.length; i++) {
+                var option = document.createElement("option");
+                option.value = data[i];
+                option.text = data[i];
+                select.appendChild(option);
+            }
+        }
+
+        function getYears() {
+            var name = document.getElementById("names").value;
+            data2 = {}
+            fetch("/years?name=" + name)
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (data2) {
+                    appendYears(data2);
+                })
+                .catch(function (err) {
+                    console.log('error: ' + err);
+                });
+            function appendYears(data2) {
+                var years = document.getElementById("years");
+                years.options.length = 0;
+                var option = document.createElement("option");
+                option.value = "";
+                option.text = "Select Year #1";
+                years.appendChild(option);
+                for (var i = 0; i < data2.length; i++) {
+                    var option = document.createElement("option");
+                    option.value = data2[i];
+                    option.text = data2[i];
+                    years.appendChild(option);
+                }
+            }
+        }
+        function getYears2() {
+            var name = document.getElementById("names2").value;
+            data2 = {}
+            fetch("/years?name=" + name)
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (data2) {
+                    appendYears(data2);
+                })
+                .catch(function (err) {
+                    console.log('error: ' + err);
+                });
+            function appendYears(data2) {
+                var years = document.getElementById("years2");
+                years.options.length = 0;
+                var option = document.createElement("option");
+                option.value = "";
+                option.text = "Select Year #2";
+                years.appendChild(option);
+                for (var i = 0; i < data2.length; i++) {
+                    var option = document.createElement("option");
+                    option.value = data2[i];
+                    option.text = data2[i];
+                    years.appendChild(option);
+                }
+            }
+        }
+
+        function overlay() {
+            var name = document.getElementById("names").value;
+            var year = document.getElementById("years").value;
+            var field = document.getElementById("meas").value;
+            var name2 = document.getElementById("names2").value;
+            var year2 = document.getElementById("years2").value;
+            var graph = document.getElementById("graph");
+            var repo_link = document.getElementById("repo_link");
+            var repo_link2 = document.getElementById("repo_link2");
+            var divider = document.getElementById("divider");
+            divider.innerHTML = "<hr>"
+            fetch("/overlay?name=" + name + "&year=" + year + "&field=" + field + "&name2=" + 
+                name2 + "&year2=" + year2)
+                .then(function (response) {
+                    return response.text();
+                })
+                .then(function (response) {
+                    graph.innerHTML = response;
+                })
+                .catch(function (err) {
+                    console.log('error: ' + err);
+                });
+            fetch("/repo/" + name + "/" + year)
+                .then(function (response) {  
+                    return response.text();
+                })
+                .then(function (response) {
+                    var a = document.getElementById('link_anchor');
+                    a.innerHTML = "";
+                    var link = document.createTextNode("Source #1: AMRDC Data Repository\n");
+                    a.appendChild(link); 
+                    a.title = "AMRDC Data Repository";  
+                    a.href = response; 
+                    repo_link.appendChild(a);
+                })
+                .catch(function (err) {
+                    console.log('error: ' + err);
+                });
+            fetch("/repo/" + name2 + "/" + year2)
+                .then(function (response) {  
+                    return response.text();
+                })
+                .then(function (response) {
+                    var a = document.getElementById('link_anchor2');
+                    a.innerHTML = "";
+                    var link = document.createTextNode("Source #2: AMRDC Data Repository\n");
+                    a.appendChild(link); 
+                    a.title = "AMRDC Data Repository";  
+                    a.href = response; 
+                    repo_link2.appendChild(a);
+                })
+                .catch(function (err) {
+                    console.log('error: ' + err);
+                });
+        }
+
+    </script>
+</body>
+
+</html>
