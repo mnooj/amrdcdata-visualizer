@@ -1,61 +1,107 @@
 South Pole Station
 1958,https://amrdcdata.ssec.wisc.edu/dataset/surface-observational-data-amundsen-scott-south-pole-station-1958
 1959,https://amrdcdata.ssec.wisc.edu/dataset/surface-observational-data-amundsen-scott-south-pole-station-1959
-Windless Bight
-2020,https://amrdcdata.ssec.wisc.edu/dataset/windless-bight-automatic-weather-station-2020-quality-controlled-observational-data
-Willie Field
-2020,https://amrdcdata.ssec.wisc.edu/dataset/willie-field-automatic-weather-station-2020-quality-controlled-observational-data
-Whitlock
-2020,https://amrdcdata.ssec.wisc.edu/dataset/whitlock-automatic-weather-station-2020-quality-controlled-observational-data
-White Island
-2020,https://amrdcdata.ssec.wisc.edu/dataset/white-island-automatic-weather-station-2020-quality-controlled-observational-data
-Vito
-2020,https://amrdcdata.ssec.wisc.edu/dataset/vito-automatic-weather-station-2020-quality-controlled-observational-data
+AGO-4
+2020,https://amrdcdata.ssec.wisc.edu/dataset/ago-4-automatic-weather-station-2020-quality-controlled-observational-data
+AGO-5
+2020,https://amrdcdata.ssec.wisc.edu/dataset/ago-5-automatic-weather-station-2020-quality-controlled-observational-data
+Austin
+2020,https://amrdcdata.ssec.wisc.edu/dataset/austin-automatic-weather-station-2020-quality-controlled-observational-data
+Baldrick
+2020,https://amrdcdata.ssec.wisc.edu/dataset/baldrick-automatic-weather-station-2020-quality-controlled-observational-data
+Bear Peninsula
+2020,https://amrdcdata.ssec.wisc.edu/dataset/bear-peninsula-automatic-weather-station-2020-quality-controlled-observational-data
+Byrd
+2020,https://amrdcdata.ssec.wisc.edu/dataset/byrd-automatic-weather-station-2020-quality-controlled-observational-data
+Cape Bird
+2020,https://amrdcdata.ssec.wisc.edu/dataset/cape-bird-automatic-weather-station-2020-quality-controlled-observational-data
+Cape Hallett
+2020,https://amrdcdata.ssec.wisc.edu/dataset/cape-hallett-automatic-weather-station-2020-quality-controlled-observational-data
+D-10
+2020,https://amrdcdata.ssec.wisc.edu/dataset/d-10-automatic-weather-station-2020-quality-controlled-observational-data
+D-47
+2020,https://amrdcdata.ssec.wisc.edu/dataset/d-47-automatic-weather-station-2020-quality-controlled-observational-data
+D-85
+2020,https://amrdcdata.ssec.wisc.edu/dataset/d-85-automatic-weather-station-2020-quality-controlled-observational-data
+Dismal Island
+2020,https://amrdcdata.ssec.wisc.edu/dataset/dismal-island-automatic-weather-station-2020-quality-controlled-observational-data
+Dome C II
+2020,https://amrdcdata.ssec.wisc.edu/dataset/dome-c-ii-automatic-weather-station-2020-quality-controlled-observational-data
+Dome Fuji
+2020,https://amrdcdata.ssec.wisc.edu/dataset/dome-fuji-automatic-weather-station-2020-quality-controlled-observational-data
+Elaine
+2020,https://amrdcdata.ssec.wisc.edu/dataset/elaine-automatic-weather-station-2020-quality-controlled-observational-data
+Elizabeth
+2020,https://amrdcdata.ssec.wisc.edu/dataset/elizabeth-automatic-weather-station-2020-quality-controlled-observational-data
+Emilia
+2020,https://amrdcdata.ssec.wisc.edu/dataset/emilia-automatic-weather-station-2020-quality-controlled-observational-data
+Emma
+2020,https://amrdcdata.ssec.wisc.edu/dataset/emma-automatic-weather-station-2020-quality-controlled-observational-data
+Erin
+2020,https://amrdcdata.ssec.wisc.edu/dataset/erin-automatic-weather-station-2020-quality-controlled-observational-data
+Ferrell
+2020,https://amrdcdata.ssec.wisc.edu/dataset/ferrell-automatic-weather-station-2020-quality-controlled-observational-data
+Gill
+2020,https://amrdcdata.ssec.wisc.edu/dataset/gill-automatic-weather-station-2020-quality-controlled-observational-data
+Harry
+2020,https://amrdcdata.ssec.wisc.edu/dataset/harry-automatic-weather-station-2020-quality-controlled-observational-data
+Henry
+2020,https://amrdcdata.ssec.wisc.edu/dataset/henry-automatic-weather-station-2020-quality-controlled-observational-data
+Janet
+2020,https://amrdcdata.ssec.wisc.edu/dataset/janet-automatic-weather-station-2020-quality-controlled-observational-data
+JASE2007
+2020,https://amrdcdata.ssec.wisc.edu/dataset/jase2007-automatic-weather-station-2020-quality-controlled-observational-data
+Kathie
+2020,https://amrdcdata.ssec.wisc.edu/dataset/kathie-automatic-weather-station-2020-quality-controlled-observational-data
+Laurie II
+2020,https://amrdcdata.ssec.wisc.edu/dataset/laurie-ii-automatic-weather-station-2020-quality-controlled-observational-data
+Lettau
+2020,https://amrdcdata.ssec.wisc.edu/dataset/lettau-automatic-weather-station-2020-quality-controlled-observational-data
+Linda
+2020,https://amrdcdata.ssec.wisc.edu/dataset/linda-automatic-weather-station-2020-quality-controlled-observational-data
+Lorne
+2020,https://amrdcdata.ssec.wisc.edu/dataset/lorne-automatic-weather-station-2020-quality-controlled-observational-data
+Manuela
+2020,https://amrdcdata.ssec.wisc.edu/dataset/manuela-automatic-weather-station-2020-quality-controlled-observational-data
+Marble Point
+2020,https://amrdcdata.ssec.wisc.edu/dataset/marble-point-automatic-weather-station-2020-quality-controlled-observational-data
+Marble Point II
+2020,https://amrdcdata.ssec.wisc.edu/dataset/marble-point-ii-automatic-weather-station-2020-quality-controlled-observational-data
+Margaret
+2020,https://amrdcdata.ssec.wisc.edu/dataset/margaret-automatic-weather-station-2020-quality-controlled-observational-data
+Marilyn
+2020,https://amrdcdata.ssec.wisc.edu/dataset/marilyn-automatic-weather-station-2020-quality-controlled-observational-data
+Minna Bluff
+2020,https://amrdcdata.ssec.wisc.edu/dataset/minna-bluff-automatic-weather-station-2020-quality-controlled-observational-data
+Mizuho
+2020,https://amrdcdata.ssec.wisc.edu/dataset/mizuho-automatic-weather-station-2020-quality-controlled-observational-data
+Nico
+2020,https://amrdcdata.ssec.wisc.edu/dataset/nico-automatic-weather-station-2020-quality-controlled-observational-data
+PANDA-South
+2020,https://amrdcdata.ssec.wisc.edu/dataset/panda-south-automatic-weather-station-2020-quality-controlled-observational-data
+Phoenix
+2020,https://amrdcdata.ssec.wisc.edu/dataset/phoenix-automatic-weather-station-2020-quality-controlled-observational-data
+Possession Island
+2020,https://amrdcdata.ssec.wisc.edu/dataset/possession-island-automatic-weather-station-2020-quality-controlled-observational-data
+Relay Station
+2020,https://amrdcdata.ssec.wisc.edu/dataset/relay-station-automatic-weather-station-2020-quality-controlled-observational-data
+Sabrina
+2020,https://amrdcdata.ssec.wisc.edu/dataset/sabrina-automatic-weather-station-2020-quality-controlled-observational-data
+Schwerdtfeger
+2020,https://amrdcdata.ssec.wisc.edu/dataset/schwerdtfeger-automatic-weather-station-2020-quality-controlled-observational-data
+Siple Dome
+2020,https://amrdcdata.ssec.wisc.edu/dataset/siple-dome-automatic-weather-station-2020-quality-controlled-observational-data
+Theresa
+2020,https://amrdcdata.ssec.wisc.edu/dataset/theresa-automatic-weather-station-2020-quality-controlled-observational-data
 Thurston Island
 2020,https://amrdcdata.ssec.wisc.edu/dataset/thurston-island-automatic-weather-station-2020-quality-controlled-observational-data
-Theresa
-Siple Dome
-Schwerdtfeger
-Sabrina
-Relay Station
-Possession Island
-Phoenix
-PANDA-South
-Nico
-Mizuho
-Minna Bluff
-Marilyn
-Margaret
-Marble Point II
-Marble Point
-Manuela
-Lorne
-Linda
-Lettau
-Laurie II
-Kathie
-JASE2007
-Janet
-Henry
-Harry
-Gill
-Ferrell
-Erin
-Emma
-Emilia
-Elizabeth
-Elaine
-Dome Fuji
-Dome C II
-Dismal Island
-D-85
-D-47
-D-10
-Cape Hallett
-Cape Bird
-Byrd
-Bear Peninsula
-Baldrick
-Austin
-AGO-5
-AGO-4
+Vito
+2020,https://amrdcdata.ssec.wisc.edu/dataset/vito-automatic-weather-station-2020-quality-controlled-observational-data
+White Island
+2020,https://amrdcdata.ssec.wisc.edu/dataset/white-island-automatic-weather-station-2020-quality-controlled-observational-data
+Whitlock
+2020,https://amrdcdata.ssec.wisc.edu/dataset/whitlock-automatic-weather-station-2020-quality-controlled-observational-data
+Willie Field
+2020,https://amrdcdata.ssec.wisc.edu/dataset/willie-field-automatic-weather-station-2020-quality-controlled-observational-data
+Windless Bight
+2020,https://amrdcdata.ssec.wisc.edu/dataset/windless-bight-automatic-weather-station-2020-quality-controlled-observational-data
