@@ -10,7 +10,7 @@ def writeCSV(datafile, targetFilepath):
         writer = csv.writer(newFile)        ## Create writer
         writer.writerow(header)             ## Write our custom header to csv
         for line in range(2):
-            next(data)                      ## Skip header from .txt file
+            next(data)                      ## Skip two line header from .txt file
         for line in data:           
-            row = line.split()              ## Split() cuts out all whitespaces and creates a clean array
+            row = line.split()              ## Split() cuts out all whitespaces and creates an array of strings
             writer.writerow(row)            ## Write the array to a comma delineated row
