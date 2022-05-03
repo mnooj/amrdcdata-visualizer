@@ -22,4 +22,4 @@ with open(destFilepath + '.csv', 'w', encoding='UTF8', newline='') as newFile:
         next(data)                          ## Skip header from .txt file
     for line in data:
         row = line.split()                  ## Split() cuts out all whitespaces and creates a clean array
-        writer.writerow(row)                ## Write the array to a comma delineated row
+        writer.writerow(row)                ## Write the array to a comma delimited row
